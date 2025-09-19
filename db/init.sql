@@ -1,1 +1,3 @@
-
+CREATE TABLE IF NOT EXISTS greetings (id SERIAL PRIMARY KEY, msg TEXT NOT NULL);
+INSERT INTO greetings (msg) VALUES ('hello world')
+ON CONFLICT DO NOTHING;
